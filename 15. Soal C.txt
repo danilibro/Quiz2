@@ -1,0 +1,21 @@
+create database belanja;
+
+use belanja;
+
+create table customers(
+id int AUTO_INCREMENT,
+name varchar(255),
+email varchar(255),
+password varchar(255),
+Primary key(id)
+);
+
+create table orders(
+id int AUTO_INCREMENT,
+amount varchar(255),
+customer_id int,
+Primary key(id)
+);
+
+alter table orders
+add foreign key (customer_id) references orders(id);

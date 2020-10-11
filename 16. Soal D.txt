@@ -1,0 +1,9 @@
+INSERT INTO customers VALUES (1, 'John Doe', 'john@doe.com', 'john123'),
+(2, 'Jane Doe', 'jane@doe.com', 'jenita123');
+
+INSERT INTO orders VALUES
+(1, 500, 1),
+(2, 200, 2),
+(3, 750, 2),
+(4, 250, 1),
+(5, 400, 2);
